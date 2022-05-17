@@ -1,5 +1,5 @@
 
-public class Vehiculo {
+public abstract class Vehiculo {
 
 	// atributos que van a heredar Coche, Avion y Bicicleta
 	protected float velocidad;
@@ -7,9 +7,7 @@ public class Vehiculo {
 	protected int orientacionRuedas;
 	
 	// métodos que van a heredar Coche, Avion y Bicicleta
-	public void parar() {
-		System.out.println("Método parar de Vehiculo");
-	}
+	public abstract void parar();
 	
 	public void acelerar() {
 		System.out.println("Método acelerar de Vehiculo");

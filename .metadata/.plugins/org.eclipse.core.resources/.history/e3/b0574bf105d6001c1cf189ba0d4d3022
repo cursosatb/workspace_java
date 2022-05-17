@@ -1,0 +1,17 @@
+package antiguo;
+
+public class Main4String {
+
+	public static void main(String[] args) {
+		
+		String texto = "Esto es un string";
+		
+		// la longitud del string
+		System.out.println(texto.length());
+		
+		// mostrar el elemento de la posición 5
+		System.out.println(texto.charAt(5));
+
+	}
+
+}

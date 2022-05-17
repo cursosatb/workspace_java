@@ -5,4 +5,7 @@
     <fullyQualifiedTypeName name="Coche"/>
     <fullyQualifiedTypeName name="Vehiculo"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="cursointerfaces.VehiculoInterfaz"/>
+    <fullyQualifiedTypeName name="cursointerfaces.PersonaInterfaz"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 </qualifiedTypeNameHistroy>

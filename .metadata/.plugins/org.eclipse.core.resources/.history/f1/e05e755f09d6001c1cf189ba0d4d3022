@@ -1,0 +1,14 @@
+package antiguo;
+
+public class Ejercicio10String {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Ejercicio: escribe un programa que devuelva si un String es palíndromo (se
+		 * escribe igual hacia delante y hacia detrás). Ejemplo: "sometemos".
+		 */
+
+	}
+
+}
