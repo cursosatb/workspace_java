@@ -1,0 +1,16 @@
+
+public class Automovil {
+
+	// atributos
+	float velocidad;
+	float caballos;
+	int asientos;
+	int orientacionRuedas;
+	
+	// métodos
+	void parar() {}
+	void acelerar() {}
+	void desacelerar() {}
+	void girarIzquierda() {}
+	void girarDerecha() {}	
+}

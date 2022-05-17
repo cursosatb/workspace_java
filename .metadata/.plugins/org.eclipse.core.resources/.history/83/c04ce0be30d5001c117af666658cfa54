@@ -1,0 +1,9 @@
+package curso;
+
+public class Estudiante {
+
+	// atributos
+	private int numeroDeNotas;
+	private double sumaDeNotas;
+	private double notaMedia;
+}

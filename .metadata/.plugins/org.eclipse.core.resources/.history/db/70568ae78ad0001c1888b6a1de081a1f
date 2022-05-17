@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+
+//		System.out.println(4.3 >= 4);
+//		System.out.println(1 == 2);
+//		System.out.println(4 < 4);
+//		System.out.println(2 != 5);
+
+		/*
+		 * Ejercicio: escribe un programa con una variable de tipo entero (a) y un
+		 * condicional que evalúe si el entero es par o impar utilizando el operador %.
+		 */
+//		int a = 8;
+//		if (a % 2 == 0) {
+//			System.out.println("Es par");
+//		} else {
+//			System.out.println("Es impar");
+//		}
+		
+		/*
+		 * Introducción de datos por teclado
+		 */
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("Introduzca número:");
+		
+		// aquí se queda detenido el programa hasta que pulses intro
+		int numero = keyboard.nextInt();
+		System.out.println(numero);
+				
+		keyboard.close();
+
+	}
+}

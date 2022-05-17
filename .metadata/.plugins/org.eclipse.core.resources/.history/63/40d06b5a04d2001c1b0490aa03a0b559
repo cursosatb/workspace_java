@@ -1,0 +1,16 @@
+
+public class Ejercicio8 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 
+		 * Solicitar al usuario un número y si introduce una letra o un string, mostrar
+		 * un mensaje por pantalla
+		 */
+		
+		System.out.print("Introduzca el primer número: ");
+		int numero1 = keyboard.nextInt();
+		
+	}
+}

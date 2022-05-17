@@ -1,0 +1,40 @@
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Hola mundo");
+	
+		// suma
+		System.out.println(5 + 2);
+		
+		/*
+		 resta
+		 */
+		System.out.println(5 - 2);
+		System.out.println(5 * 2);
+		System.out.println(5 / 2);
+		System.out.println(5 % 2);
+		System.out.println(Math.pow(5, 3));
+		System.out.println(5.0 / 2);
+		System.out.println("2*3");
+		System.out.println(2*3);
+		
+		/*
+		 * Secuencias de escape
+		 */
+		System.out.println("\t\"Hola\nmundo\"");
+		System.out.println("  \"  "); // para que aparezca una comilla (")
+		System.out.println("  \\  "); // para que aparezca una barra invertida (/)
+		
+		/*
+		 * printf
+		 */
+		System.out.printf("El producto de 5*2 = %d", 5*2).println();
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Ejercicio7 {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Escribe un programa que obtenga los números enteros comprendidos entre dos
+		 * números introducidos por teclado y validados como distintos
+		 */
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.print("Introduzca el primer número: ");
+		int numero1 = keyboard.nextInt();
+		System.out.print("Introduzca el segundo número: ");
+		int numero2 = keyboard.nextInt();
+		
+		
+		
+		
+		keyboard.close();
+	}
+
+}

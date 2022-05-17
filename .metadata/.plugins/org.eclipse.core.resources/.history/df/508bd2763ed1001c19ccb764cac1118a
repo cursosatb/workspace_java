@@ -1,0 +1,19 @@
+
+public class Main2a {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		 * Bucle while
+		 */
+		
+		int edad = 17;
+		while(edad < 18) {
+			System.out.println("Estoy dentro del while");
+			break;
+		}
+		
+	}
+
+}

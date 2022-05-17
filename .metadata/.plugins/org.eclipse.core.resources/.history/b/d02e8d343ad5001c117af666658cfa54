@@ -1,0 +1,36 @@
+package curso;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// crear un ArrayList vacío
+		ArrayList<Estudiante> estudiantes = new ArrayList<Estudiante>();
+		
+		// creamos el objeto de la clase Estudiante
+		Estudiante estudiante1 = new Estudiante(5, 55, 55555, 0, 0.0, 0.0);
+		
+		// insertamos el objeto de la clase Estudiante en el ArrayList estudiantes
+		estudiantes.add(estudiante1);
+		
+		System.out.println(estudiantes.size());
+		
+		
+		
+//		Estudiante estudiante2 = new Estudiante(5, 55, 55555, 0, 0.0, 0.0);
+//		Estudiante estudiante3 = new Estudiante(5, 55, 55555, 0, 0.0, 0.0);
+//		Estudiante estudiante4 = new Estudiante(5, 55, 55555, 0, 0.0, 0.0);
+//		Estudiante estudiante5 = new Estudiante(5, 55, 55555, 0, 0.0, 0.0);
+		
+//		// invocación a un método no estático OBJETO.METODO_NO_ESTATICO
+//		estudiante1.mostrarInfo();
+		
+		// invocación a un método estático: CLASE.METODO_ESTATICO
+//		Estudiante.crearEstudiante();
+
+	}
+
+}

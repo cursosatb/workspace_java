@@ -1,0 +1,21 @@
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		
+		// crear varios objetos de la clase Coche
+		Coche audi = new Coche();
+		Coche nissan = new Coche();
+		
+		// crear varios objetos de la clase Estudiante
+		Estudiante estudiante1 = new Estudiante();
+		Estudiante estudiante2 = new Estudiante();
+		
+//		System.out.println(audi.asientos);
+		
+//		int asientos;
+//		System.out.println(asientos);
+
+	}
+
+}

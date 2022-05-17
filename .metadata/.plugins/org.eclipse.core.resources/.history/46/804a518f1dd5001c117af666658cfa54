@@ -1,0 +1,23 @@
+
+public class Vehiculo {
+
+	// atributos que van a heredar Coche, Avion y Bicicleta
+	protected float velocidad;
+	protected int asientos;
+	protected int orientacionRuedas;
+	
+	// métodos que van a heredar Coche, Avion y Bicicleta
+	public void parar() {}
+	public void acelerar() {}
+	public void desacelerar() {}
+	public void girarIzquierda() {}
+	public void girarDerecha() {}
+	
+	public Vehiculo(float velocidad, int asientos, int orientacionRuedas) {
+		this.velocidad = velocidad;
+		this.asientos = asientos;
+		this.orientacionRuedas = orientacionRuedas;
+	}
+	
+	
+}

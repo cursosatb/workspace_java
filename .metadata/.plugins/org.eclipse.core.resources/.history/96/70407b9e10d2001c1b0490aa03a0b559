@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Ejercicio9Metodos {
+	
+	public static void esNumero(String numeroString) {
+		try {
+			int numero2Int = Integer.parseInt(numeroString);
+			ok = true;
+		}
+		catch(Exception e) {			
+			System.out.println("Se ha equivocado");			
+		}
+	}
+
+	public static void main(String[] args) {
+
+		/*
+		 * Implementar métodos restar, multiplicar y dividir. Tienen que devolver un entero
+		 * (int). Invocar los tres métodos con los dos números introducidos por el usuario
+		 * y mostrar el resultado por pantalla
+		 */
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+//		System.out.print("Introduzca el primer número: ");
+//		int numero1 = keyboard.nextInt();
+		
+		boolean ok = false;
+		// mientras que ok sea igual a false
+		while(ok == false) {
+			System.out.print("Introduzca el segundo número: ");
+			String numero2String = keyboard.next();
+			
+			
+		}
+		
+		System.out.println("Programa finalizado");		
+		
+	}
+	
+	
+}

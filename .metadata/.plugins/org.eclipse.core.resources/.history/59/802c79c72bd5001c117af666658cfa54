@@ -1,0 +1,23 @@
+package curso;
+
+public class Persona {
+
+	// atributos
+	protected int id;
+	protected int edad;
+	protected int telefono;
+	
+	// constructor
+	public Persona(int id, int edad, int telefono) {
+		// invoca al constructor de la clase Object
+		super();
+		System.out.println("Constructor de la clase Persona");
+		this.id = id;
+		this.edad = edad;
+		this.telefono = telefono;
+	}
+	
+	
+	
+	
+}

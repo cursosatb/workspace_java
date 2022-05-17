@@ -1,0 +1,86 @@
+
+public class Estudiante {
+
+	// atributos
+	private int id;
+	private int edad;
+	private int telefono;
+	private int numeroDeNotas;
+	private double sumaDeNotas;
+	private double notaMedia;
+
+	// constructor por defecto
+	public Estudiante() {
+	}
+
+	// constructor parametrizado (todos los parámetros)
+	public Estudiante(int id, int edad, int telefono, int numeroDeNotas, double sumaDeNotas, double notaMedia) {
+		this.id = id;
+		this.edad = edad;
+		this.telefono = telefono;
+		this.numeroDeNotas = numeroDeNotas;
+		this.sumaDeNotas = sumaDeNotas;
+		this.notaMedia = notaMedia;
+	}
+	
+	public Estudiante(int id, int edad) {
+		this.id = id;
+		this.edad = edad;
+	}
+	
+	public Estudiante(int id, int edad, int telefono) {
+		this.id = id;
+		this.edad = edad;
+		this.telefono = telefono;
+	}
+	
+	// métodos estáticos
+	public static Estudiante crearEstudiante() {
+		Estudiante estudiante = new Estudiante();
+		return estudiante;
+	}
+
+	// métodos no estáticos
+	public void mostrarInfo() {
+	}
+
+	public void agregarNuevoNota() {
+	}
+	
+	// métodos getters y setters
+	public int getId() {
+		return this.id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public int getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(int telefono) {
+		this.telefono = telefono;
+	}
+
+	public int getNumeroDeNotas() {
+		return numeroDeNotas;
+	}
+
+	public double getSumaDeNotas() {
+		return sumaDeNotas;
+	}
+
+	public double getNotaMedia() {
+		return notaMedia;
+	}
+}

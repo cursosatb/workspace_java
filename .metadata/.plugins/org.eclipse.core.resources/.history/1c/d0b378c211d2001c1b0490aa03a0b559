@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Ejercicio9Metodos {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Implementar métodos restar, multiplicar y dividir. Tienen que devolver un entero
+		 * (int). Invocar los tres métodos con los dos números introducidos por el usuario
+		 * y mostrar el resultado por pantalla
+		 */
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.print("Introduzca el primer número: ");
+		int numero1 = keyboard.nextInt();
+		
+		System.out.print("Introduzca el segundo número: ");
+		String numero2 = keyboard.next();
+		
+		
+		
+	}
+	
+	
+}

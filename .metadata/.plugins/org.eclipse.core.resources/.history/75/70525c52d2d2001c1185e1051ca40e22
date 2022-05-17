@@ -1,0 +1,73 @@
+
+public class Coche {
+
+	// atributos no estáticos
+	private float velocidad;
+	private float caballos;
+	private int asientos;
+	private int orientacionRuedas;
+	
+	// atributos estáticos
+	public static float factorConversionCvKw = 1.35f;
+	
+	// constructor por defecto
+	public Coche() {}
+	
+	// constructor parametrizado
+	public Coche(float velocidad, float caballos, int asientos, int orientacionRuedas) {
+		System.out.println("Constructor de la clase Coche");
+		this.velocidad = velocidad;
+		this.caballos = caballos;
+		this.asientos = asientos;
+		this.orientacionRuedas = orientacionRuedas;
+	}
+	
+	/*
+	 * métodos estáticos
+	 */
+	
+	// convierte los caballos (cv) a kilowatios (kw)
+	public static float convertirCvKw(float cv) {
+		float kw = cv / Coche.factorConversionCvKw;
+		return kw;
+	}
+	
+	// convierte los kilowatios (kw) a caballos (cv)
+	public static float convertirKwCv(float kw) {
+		float cv = kw * Coche.factorConversionCvKw;
+		return cv;
+	}	
+	
+	/*
+	 * métodos no estáticos
+	 */
+	public void acelerar() { }
+	public void desacelerar() {}
+	public void girarIzquierda() {}
+	public void girarDerecha() {}	
+	
+	// métodos getters and setters (son siempre públicos)
+	public int getAsientos() {
+		return this.asientos;
+	}
+	
+	public float getCaballos() {
+		return caballos;
+	}
+
+	public void setCaballos(float caballos) {
+		this.caballos = caballos;
+	}
+
+	public float getVelocidad() {
+		return velocidad;
+	}
+
+	public int getOrientacionRuedas() {
+		return orientacionRuedas;
+	}
+
+	public void setAsientos(int asientos) {
+		this.asientos = asientos;
+	}
+}

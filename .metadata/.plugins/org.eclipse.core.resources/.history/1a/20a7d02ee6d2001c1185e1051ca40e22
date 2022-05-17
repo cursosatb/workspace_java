@@ -1,0 +1,12 @@
+
+public class Avion {
+
+	private boolean trenAterrizaje;
+	
+	public void volar() {}
+	public void aterrizar() {}
+	
+	public Avion() {
+		
+	}
+}
