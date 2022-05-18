@@ -38,7 +38,6 @@ public class Main4String {
 		texto2 += "hola";
 		
 		
-		
 		// número de milisegundos desde el 1/1/1970 (formato UNIX)
 		long tiempoInicial = System.currentTimeMillis();
 		

@@ -2,6 +2,9 @@ package cursointerfaces;
 
 public class Bicicleta implements VehiculoInterfaz {
 
+	private int velocidad;
+	private int asientos;
+	
 	@Override
 	public void parar() {
 		// TODO Auto-generated method stub
