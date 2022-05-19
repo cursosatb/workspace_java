@@ -4,8 +4,10 @@
     <fullyQualifiedTypeName name="Estudiante"/>
     <fullyQualifiedTypeName name="Coche"/>
     <fullyQualifiedTypeName name="Vehiculo"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="cursointerfaces.VehiculoInterfaz"/>
     <fullyQualifiedTypeName name="cursointerfaces.PersonaInterfaz"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.banco.Gestor"/>
 </qualifiedTypeNameHistroy>
