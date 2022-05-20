@@ -10,4 +10,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.banco.Gestor"/>
+    <fullyQualifiedTypeName name="com.teatro.Localidad"/>
+    <fullyQualifiedTypeName name="com.teatro.Obra"/>
 </qualifiedTypeNameHistroy>

@@ -9,6 +9,8 @@ public class Main {
 		Obra obra = new Obra("LA BOMBILLA DE DON BLAS", "Sol, 45", 
 				300, 2, "La cena de los idiotas", "Comedia", 95, 30.0);
 		
+//		System.out.println(obra.getLocalidades().size());
+		
 		// mostramos el menú
 		Main.menu(obra);
 	}
@@ -40,8 +42,13 @@ public class Main {
 			} else if (eleccion == 2) {
 				obra.mostrarTodasLocalidades();
 			} else if (eleccion == 3) {
-//				Main7.menuTransferencias();
-			} else if (eleccion == 8) {
+				obra.mostrarLocalidadesOcupadas();
+			} else if (eleccion == 4) {
+				obra.venderLocalidad(keyboard);
+			} else if (eleccion == 5) {
+				//obra.cancelarLocalidad(keyboard);
+			}			
+			else if (eleccion == 8) {
 				System.out.println("Salir");
 			}
 

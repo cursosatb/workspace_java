@@ -73,8 +73,8 @@
 		<item key="RemoveFinal" value="false"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="389"/>
-		<item key="DIALOG_Y_ORIGIN" value="65"/>
+		<item key="DIALOG_X_ORIGIN" value="850"/>
+		<item key="DIALOG_Y_ORIGIN" value="102"/>
 		<item key="DIALOG_WIDTH" value="526"/>
 		<item key="DIALOG_HEIGHT" value="687"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
@@ -95,5 +95,8 @@
 		<item key="DIALOG_WIDTH" value="517"/>
 		<item key="DIALOG_HEIGHT" value="627"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="3"/>
 	</section>
 </section>

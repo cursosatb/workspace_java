@@ -1,3 +1,4 @@
+
 package com.teatro;
 
 public class Localidad {
@@ -49,6 +50,46 @@ public class Localidad {
 		this.tipo = null;
 		this.precioTotal = 0.0;
 	}
+	
+	public void reservarLocalidad(String nombre, int telefono, int edad, double precio) {
+		this.ocupado = true;
+		this.nombre = nombre;
+		this.telefono = telefono;
+		
+		// si la edad es mayor o igual que 0 y menor o igual que 12
+		if((edad >= 0) && (edad <= 12)) {
+			this.tipo = "INFANTIL";
+			this.precioTotal = precio - precio * 0.5;
+		}
+		// si la edad es mayor o igual que 13 y menor o igual que 17
+		else if((edad >= 13) && (edad <= 17)) {
+			this.tipo = "MENOR";
+			this.precioTotal = precio - precio * 0.2;
+		}
+		else if((edad >= 18) && (edad <= 64)) {
+			this.tipo = "MAYOR";
+			this.precioTotal = precio;
+		}
+		else if(edad >= 65) {
+			this.tipo = "JUBILADO";
+			this.precioTotal = precio - precio * 0.66;
+		}
+		
+		/*
+		 * Cálculo del precio
+		 */
+		// if(this.tipo === "INFANTIL") (JavaScript)
+//		if (this.tipo.equals("INFANTIL")) {
+//			this.precioTotal = precio / 2;
+//		}
+//		else if(this.tipo.equals("MENOR")) {
+//			this.precioTotal = precio - precio/5;
+//		}
+//		else if(this.tipo.equals("MAYOR")) {
+//			
+//		}
+			
+	}	
 
 	public boolean isOcupado() {
 		return ocupado;
@@ -96,5 +137,5 @@ public class Localidad {
 
 	public int getButaca() {
 		return butaca;
-	}	
+	}
 }

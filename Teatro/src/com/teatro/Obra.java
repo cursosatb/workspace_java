@@ -1,5 +1,7 @@
 package com.teatro;
 
+import java.util.Scanner;
+
 public class Obra extends Teatro {
 
 	private String titulo;
@@ -58,18 +60,141 @@ public class Obra extends Teatro {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-
+	
+	// opción 1 del menú
 	public void verProgramacion() {
 		this.mostrarObra();
 		this.mostrarTeatro();
 		this.mostrarPrecio();
 	}
+	
+	public boolean estaOcupadoLocalidad(int fila, int butaca) {
+		for(Localidad localidad : this.localidades) {
+			if ((localidad.getFila() == fila) && (localidad.getButaca() == butaca)) {
+				
+				// en este punto del método, la localidad EXISTE
+				return localidad.isOcupado();
+			}
+		}	
+		
+		// en este punto del método, la localidad NO existe
+		return true;
+	}
 
+	// opción 2 del menú
 	public void mostrarTodasLocalidades() {
 
+		int contador = 0;
 		for(Localidad localidad : this.localidades) {
 			
-			System.out.println(localidad.getFila() + "." + localidad.getButaca());
+//			String ocupada = (CONDICION) ? VALOR_SI_CUMPLE : VALOR_SI_NO_CUMPLE;
+			String ocupada = (localidad.isOcupado()) ? "Ocupada" : "Libre";
+			System.out.print(localidad.getFila() + "." + localidad.getButaca() + " "  + ocupada + "  ");
+			
+			contador++;
+			if(contador == 10) {
+				System.out.println();
+				contador = 0;
+			}
+		}		
+	}
+
+	// opción 3 del menú
+	public void mostrarLocalidadesOcupadas() {
+		
+		boolean estanTodosLibres = true;
+		
+		for(Localidad localidad : this.localidades) {
+			if(localidad.isOcupado()) {
+				System.out.println(localidad.getFila() + "." + localidad.getButaca()
+									+ " " + localidad.getNombre()
+									+ ", tlf: " + localidad.getTelefono()
+									+ ", Tipo: " + localidad.getTipo());
+				estanTodosLibres = false;
+			}
+		}
+		
+		if(estanTodosLibres) {
+			System.out.println("Están todos libres");
+		}
+		
+	}
+
+	// opción 4 del menú
+	public void venderLocalidad(Scanner keyboard) {
+		
+		System.out.println("¿En qué fila quieres sentarte (0-4)?");
+		int fila = keyboard.nextInt();
+		
+		System.out.println("¿Y en qué butaca (0-9)?");
+		int butaca = keyboard.nextInt();
+		
+		System.out.println("¿Cómo se llama?");
+		String nombre = keyboard.next();
+		
+		System.out.println("¿Su teléfono?");
+		int telefono = keyboard.nextInt();
+		
+		System.out.println("¿Cuántos años tiene?");
+		int edad = keyboard.nextInt();
+		
+		
+		if(String.valueOf(telefono).length() != 9) {
+			System.err.println("Teléfono no válido");			
+		}
+		
+//		if(telefono.toString().length() != 9) {
+//			System.err.println("Teléfono no válido");
+//			return;
+//		}
+		
+		if(this.estaOcupadoLocalidad(fila, butaca)) {
+			System.err.println("Está ocupado o no existe la localidad");
+			return;
+		}
+		
+		if(nombre.length() == 0) {
+			System.err.println("El nombre no puede estar vacío");
+			return;
+		}
+		
+		if((fila < 0) || (fila > 4)) {
+			System.err.println("No existe esa fila");
+			return;
+		}
+		
+		if((butaca < 0) || (butaca > 9)) {
+			System.err.println("No existe esa butaca");
+			return;
+		}
+		
+		// en este punto del programa, puedo reservar la localidad
+		for(Localidad localidad : this.localidades) {
+			if ((localidad.getFila() == fila) && (localidad.getButaca() == butaca)) {
+				localidad.reservarLocalidad(nombre, telefono, edad, this.precio);
+				System.out.println("Se ha vendido la localidad "
+						+ localidad.getFila() + "." + localidad.getButaca()
+						+ " a " + localidad.getNombre() + " por " 
+						+ localidad.getPrecioTotal() + " euros");
+			}
+		}
+	}
+
+	public void cancelarLocalidad(Scanner keyboard) {
+
+		System.out.println("¿Fila (0-4)?");
+		int fila = keyboard.nextInt();
+		
+		System.out.println("¿Butaca (0-9)?");
+		int butaca = keyboard.nextInt();
+		
+		for(Localidad localidad : this.localidades) {
+			if ((localidad.getFila() == fila) && (localidad.getButaca() == butaca)) {
+
+				// en este punto del programa sabemos que la localidad existe
+				
+				
+			}
 		}
 		
 		
