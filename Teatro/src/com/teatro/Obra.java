@@ -1,5 +1,6 @@
 package com.teatro;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Obra extends Teatro {
@@ -180,6 +181,7 @@ public class Obra extends Teatro {
 		}
 	}
 
+	// opción 5 del menú
 	public void cancelarLocalidad(Scanner keyboard) {
 
 		System.out.println("¿Fila (0-4)?");
@@ -192,12 +194,55 @@ public class Obra extends Teatro {
 			if ((localidad.getFila() == fila) && (localidad.getButaca() == butaca)) {
 
 				// en este punto del programa sabemos que la localidad existe
+					
+				// si está ocupada la localidad, cancelamos la reserva
+				if(localidad.isOcupado()) {
+					
+					System.out.println(localidad.getNombre() + " ha cancelado su reserva");
+
+					// establece todos los valores del cliente a los valores por defecto
+					localidad.cancelarLocalidad();
+					
+				}
 				
+				// y si no, mostramos un mensaje
+				else {
+					System.out.println("La plaza ya está libre");
+				}
 				
 			}
 		}
 		
 		
+	}
+
+	public void consultarLocalidad(Scanner keyboard) {
+
+		System.out.println("¿Fila (0-4)?");
+		int fila = keyboard.nextInt();
+		
+		System.out.println("¿Butaca (0-9)?");
+		int butaca = keyboard.nextInt();
+		
+		for(Localidad localidad : this.localidades) {
+			if ((localidad.getFila() == fila) && (localidad.getButaca() == butaca)) {
+				localidad.mostrarLocalidad();
+			}
+		}
+			
+	}
+
+	public void calcularRecaudacion() {
+		// TODO Auto-generated method stub
+		
+		double recaudacionTotal = 0.0;
+		
+		for(Localidad localidad : this.localidades) {
+			recaudacionTotal += localidad.getPrecioTotal(); 
+		}		
+		
+		System.out.println("Recaudación: " + recaudacionTotal);
+			
 	}
 	
 }

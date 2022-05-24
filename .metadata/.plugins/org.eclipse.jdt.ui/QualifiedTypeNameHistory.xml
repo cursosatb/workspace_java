@@ -7,9 +7,17 @@
     <fullyQualifiedTypeName name="cursointerfaces.VehiculoInterfaz"/>
     <fullyQualifiedTypeName name="cursointerfaces.PersonaInterfaz"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.banco.Gestor"/>
     <fullyQualifiedTypeName name="com.teatro.Localidad"/>
     <fullyQualifiedTypeName name="com.teatro.Obra"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="json.Persona"/>
+    <fullyQualifiedTypeName name="json.Direccion"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="Monedero"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>

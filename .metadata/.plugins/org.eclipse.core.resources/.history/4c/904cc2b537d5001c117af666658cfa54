@@ -1,8 +1,0 @@
-package curso;
-
-public class Profesor extends Persona {
-
-	private int numeroDeEdadesEstudiantes;
-	private double sumaDeEdadesEstudiantes;
-	private double estudiantesEdadMedia;
-}

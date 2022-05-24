@@ -1,5 +1,7 @@
 package com.teatro;
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -46,8 +48,12 @@ public class Main {
 			} else if (eleccion == 4) {
 				obra.venderLocalidad(keyboard);
 			} else if (eleccion == 5) {
-				//obra.cancelarLocalidad(keyboard);
-			}			
+				obra.cancelarLocalidad(keyboard);
+			} else if (eleccion == 6) {
+				obra.consultarLocalidad(keyboard);
+			} else if(eleccion == 7) {
+				obra.calcularRecaudacion();
+			}
 			else if (eleccion == 8) {
 				System.out.println("Salir");
 			}

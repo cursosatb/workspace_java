@@ -37,7 +37,7 @@ public class Localidad {
 		else {
 			System.out.println("Localidad ocupada por "  + this.nombre
 					+ ", tlf: " + this.telefono
-					+ " +, Tipo" + this.tipo 
+					+ ", Tipo: " + this.tipo 
 					+ ", Precio: " + this.precioTotal);
 		}
 	}
