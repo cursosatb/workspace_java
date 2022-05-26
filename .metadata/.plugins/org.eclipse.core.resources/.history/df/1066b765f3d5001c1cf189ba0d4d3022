@@ -1,8 +1,0 @@
-package cursointerfaces;
-
-public interface VehiculoInterfaz {
-
-	public static final float g = 9.8f;
-	
-	public abstract void parar();
-}

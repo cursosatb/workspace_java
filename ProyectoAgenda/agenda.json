@@ -1,0 +1,24 @@
+{
+  "contactos": {
+    "CoreNetworks": {
+      "paginaWeb": "http://www.corenetwork.es",
+      "nombre": "CoreNetwork",
+      "telefono": 666555444
+    },
+    "Ana": {
+      "cumpleanos": "1980-05-23",
+      "nombre": "Ana",
+      "telefono": 666555441
+    },
+    "Ontech": {
+      "paginaWeb": "http://www.ontech.es",
+      "nombre": "Ontech",
+      "telefono": 666555443
+    },
+    "Pedro": {
+      "cumpleanos": "1980-05-23",
+      "nombre": "Pedro",
+      "telefono": 666555442
+    }
+  }
+}

@@ -1,5 +1,0 @@
-package cursointerfaces;
-
-public class Bicicleta implements VehiculoInterfaz {
-
-}

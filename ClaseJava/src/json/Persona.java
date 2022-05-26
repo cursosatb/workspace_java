@@ -20,11 +20,14 @@ public class Persona {
 	
 	public void insertarAficion(String aficion) {
 		this.aficiones.add(aficion);
-	}	
+	}
+	
+	
 
 	@Override
 	public String toString() {
-		return "Persona [edad=" + edad + ", nombre=" + nombre + ", aficiones=" + aficiones + "]";
+		return "Persona [edad=" + edad + ", nombre=" + nombre + ", aficiones=" + aficiones + ", funcionario="
+				+ funcionario + ", direccion=" + direccion + "]";
 	}
 
 	public int getEdad() {

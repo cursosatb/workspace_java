@@ -36,7 +36,7 @@ public class Main {
 //		System.out.println(a / b);
 		
 		try {
-			String content = new String ( Files.readAllBytes( Paths.get("contjjjenido.txt") ) );
+			String content = new String ( Files.readAllBytes( Paths.get("contenido.txt") ) );
 			System.out.println(content);
 			
 		} catch (IOException e) {

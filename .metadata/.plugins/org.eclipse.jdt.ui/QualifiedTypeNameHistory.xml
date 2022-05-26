@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="cursointerfaces.VehiculoInterfaz"/>
     <fullyQualifiedTypeName name="cursointerfaces.PersonaInterfaz"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.banco.Gestor"/>
     <fullyQualifiedTypeName name="com.teatro.Localidad"/>
     <fullyQualifiedTypeName name="com.teatro.Obra"/>
@@ -19,5 +18,9 @@
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="Monedero"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="Contacto"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
 </qualifiedTypeNameHistroy>

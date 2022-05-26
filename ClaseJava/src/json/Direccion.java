@@ -10,6 +10,11 @@ public class Direccion {
 		this.numero = numero;
 	}
 
+	@Override
+	public String toString() {
+		return "Direccion [nombre=" + nombre + ", numero=" + numero + "]";
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
