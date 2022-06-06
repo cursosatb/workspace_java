@@ -1,0 +1,51 @@
+<!-- hibernate.cfg.xml -->
+
+<!-- hibernate.cfg.xml -->
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+  <session-factory>
+
+    <!-- parámetros de conexión -->
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/instituto</property>
+    <property name="connection.username">instituto</property>
+    <property name="connection.password">instituto</property>
+
+    <!-- número de conexiones máxima que puede establecer Hibernate al mismo tiempo con la base de datos -->
+    <property name="connection.pool_size">10</property>
+
+    <!-- 
+      aunque SQL es un estándar, existen diferencias entre sistemas de bases de datos (dialectos).
+      Pueden revisar los diferentes dialectos de hibernate en
+      https://docs.jboss.org/hibernate/orm/5.4/javadocs/org/hibernate/dialect/package-summary.html 
+    -->
+
+    <!--  dialecto SQL utilizado por Hibernate (MySQLInnoDBDialect recomendable para últimas versiones de MySQL y MariaDB)-->
+    <!--  en otras versiones antiguas de Spring se utiliza MySQLInnoDBDialect o MySQL8Dialect  -->
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+    <!--muestra todas las sentencias SQL por consola -->
+    <property name="show_sql">true</property>
+
+  <!-- 
+    Se recuperará la misma sesión de Hibernate si se trata de abrir de nuevo desde el mismo hilo (thread) de ejecución (este parámetro es obligatorio)
+  -->
+  <property name="current_session_context_class">thread</property>
+
+    <!-- 
+      manipula la base de datos al comienzo de la conexión. Los posibles valores son:
+        * update: actualiza el esquema de tablas (o lo crea si no existe)
+        * create: crea el esquema de tablas, destruyendo los datos previos
+        * create-drop: elimina el esquema cuando el SessionFactory es cerrado
+        * none: no realiza ninguna acción
+    -->
+  <property name="hbm2ddl.auto">create</property>
+
+  </session-factory>
+
+</hibernate-configuration>

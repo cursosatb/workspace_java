@@ -32,6 +32,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\workspace_java\myapp"/>
 			<item value="C:\workspace_java\Hilos"/>
 			<item value="C:\workspace_java\BancoJava"/>
 		</list>
