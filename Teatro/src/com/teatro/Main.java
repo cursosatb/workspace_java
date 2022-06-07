@@ -1,7 +1,6 @@
 package com.teatro;
 
-import java.time.LocalDate;
-import java.util.Date;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -11,16 +10,70 @@ public class Main {
 		Obra obra = new Obra("LA BOMBILLA DE DON BLAS", "Sol, 45", 
 				300, 2, "La cena de los idiotas", "Comedia", 95, 30.0);
 		
+		
+		double numero = 34445.3455;
+//		System.out.printf("%.2f", numero); 
+//		System.out.printf("%1.2f", 32.14159);
+		
+//		int edad = 18;
+//		while(edad < 25) {
+//			edad++;
+//		}
+		
+		String palabra = "Joaquín";
+		System.out.println(palabra.charAt(palabra.length() - 1));
+		
+		int numero2 = Integer.valueOf("43");
+		
+//		ArrayList<Double> numeros = new ArrayList<Object> ();
+//		numeros.add(4);
+//		numeros.add(2);
+//		numeros.add(3);
+//		numeros.add(1);
+		
+//		System.out.println(numeros.size());
+//		System.out.println(numeros.get(0));
+		
+		
+		
+		
+//		for (int i = 0; i < 10; i--) {
+//			
+//		}
+		
+		
+	
 //		System.out.println(obra.getLocalidades().size());
 		
 		// mostramos el menú
-		Main.menu(obra);
+//		Main.menu(obra);
+	}
+	
+	public static int sumar(int numero1, int numero2) {
+		return numero1 + numero2;
+	}
+	
+	public int restar(int numero1, int numero2) {
+		return numero1 - numero2;
 	}
 	
 	public static void menu(Obra obra) {
 		
 		Scanner keyboard = new Scanner(System.in);
-
+		
+		// invocación de método estático
+		/*Main.sumar(2, 3);
+		
+		// invocación de método no estático
+		Main main = new Main();
+		main.restar(2, 1);
+		main.sumar(1, 2);
+*/
+//		Main.sumar(1, 2);
+//		sumar(1,2);
+		
+		
+		
 		int eleccion = 6;
 		
 		do {
